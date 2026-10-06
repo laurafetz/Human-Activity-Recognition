@@ -90,17 +90,9 @@ The script writes the rerun model-comparison table and final test predictions to
 - K-nearest neighbours
 - Reproducible R workflows
 
-## Contributors
+## Author
 
-This project was originally completed collaboratively by **Laura** and **Yuxuan**.
-
-| Component | Contributor(s) |
-| --- | --- |
-| Layout, design and text | Laura |
-| Feature extraction | Yuxuan and Laura |
-| Model selection | Yuxuan and Laura |
-
-This repository is a cleaned portfolio presentation of the collaborative coursework and preserves the original attribution.
+**Laura M. Fetz** and **Yuxuan Xiang**
 
 ## Dataset Attribution
 
