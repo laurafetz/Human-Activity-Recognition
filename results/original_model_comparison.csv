@@ -1,0 +1,5 @@
+model,best_cv_accuracy
+Multinomial logistic regression,0.8920647
+LDA,0.8667520
+KNN,0.7444716
+KNN scaled,0.8757163

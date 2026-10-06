@@ -1,0 +1,8 @@
+check,value
+training_accelerometer_files,42
+training_gyroscope_files,42
+test_accelerometer_files,19
+test_gyroscope_files,19
+activity_labels_present,true
+training_labels_present,true
+example_submission_present,true
