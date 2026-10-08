@@ -1,5 +1,4 @@
-# Human Activity Recognition
-# Classifying Physical Activity from Smartphone Sensor Data
+# Human Activity Recognition from Smartphone Sensors
 
 This project classifies physical activities and postural transitions from raw smartphone accelerometer and gyroscope signals. The analysis converts 50 Hz triaxial sensor streams into fixed-length epochs, engineers time- and frequency-domain features, compares several multiclass classifiers using cross-validation, and generates predictions for held-out users.
 
@@ -9,7 +8,7 @@ How accurately can physical activities and postural transitions be classified fr
 
 ## Data
 
-The project uses the **Smartphone-Based Recognition of Human Activities and Postural Transitions** dataset adapted for the University of Amsterdam Behavioural Data Analysis course. The packaged dataset contains raw accelerometer and gyroscope files, training labels, activity definitions, and the original dataset documentation.
+The project uses the **Smartphone-Based Recognition of Human Activities and Postural Transitions** dataset adapted for the University of Amsterdam Behavioural Data Analysis course. The included course dataset contains raw accelerometer and gyroscope files, training labels, activity definitions, and the original dataset documentation.
 
 The activity classes include standing, sitting, lying, walking, walking downstairs, walking upstairs, and six postural transitions.
 
@@ -33,6 +32,8 @@ The workflow consists of:
 | LDA | 86.68% |
 | KNN | 74.45% |
 
+These are historical notebook results from epoch-level cross-validation, not a held-out-user accuracy estimate. Predictor filtering in the source script occurs before cross-validation; validation on entirely unseen users should fit preprocessing inside user-grouped folds.
+
 The full tuning-level results from the original notebook are stored in `results/original_cv_details.csv`.
 
 ## Code Cleaning
@@ -42,7 +43,7 @@ The portfolio script follows the original analytical design while correcting evi
 ## Repository Structure
 
 ```text
-R Project 3 - Human Activity Recognition/
+Human-Activity-Recognition/
 ├── README.md
 ├── analysis.R
 ├── .gitignore
@@ -60,7 +61,7 @@ R Project 3 - Human Activity Recognition/
     └── validation_report.csv
 ```
 
-## Reproducibility
+## Rerunning the source workflow
 
 Install the required R packages:
 
@@ -75,20 +76,6 @@ source("analysis.R")
 ```
 
 The script writes the rerun model-comparison table and final test predictions to `results/`.
-
-## Skills Demonstrated
-
-- Time-series sensor data
-- Human activity recognition
-- Feature engineering
-- Signal processing and spectral features
-- Multiclass classification
-- Cross-validation
-- Feature selection
-- Multinomial logistic regression
-- Linear discriminant analysis
-- K-nearest neighbours
-- Reproducible R workflows
 
 ## Contributors
 
