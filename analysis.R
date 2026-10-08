@@ -1,4 +1,4 @@
-# R Project 3 - Human Activity Recognition
+# Project authors: Laura Maria Fetz and Yuxuan Xiang
 # Classifying Physical Activity from Smartphone Sensor Data
 # Last updated 5th of October 2026
 # Laura Maria Fetz
