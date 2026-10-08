@@ -1,4 +1,4 @@
-# R Project 3 - Human Activity Recognition
+# Human Activity Recognition
 # Classifying Physical Activity from Smartphone Sensor Data
 
 This project classifies physical activities and postural transitions from raw smartphone accelerometer and gyroscope signals. The analysis converts 50 Hz triaxial sensor streams into fixed-length epochs, engineers time- and frequency-domain features, compares several multiclass classifiers using cross-validation, and generates predictions for held-out users.
